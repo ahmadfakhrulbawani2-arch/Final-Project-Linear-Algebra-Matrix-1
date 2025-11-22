@@ -1,3 +1,5 @@
+# from obeSpl.py
+
 import numpy as np
 
 def calcDet(A):
@@ -6,7 +8,8 @@ def calcDet(A):
 
 def printMatrix(M):
     for row in M:
-        print("   ", row)
+        formatted = ["{:.2f}".format(x) for x in row]
+        print("   [" + ", ".join(formatted) + "]")
     print()
 
 def gaussStep(matrix3):
@@ -107,8 +110,8 @@ def showSol(matrix3):
             print(f"x{i+1} = {val:.4f}")
 
 
+# function calls
 
-# test sample
 A1 = [
     [2, 1, -1, 8],
     [-3, -1, 2, -11],
@@ -129,8 +132,8 @@ B = [
 ]
 
 C = [
-    [2, 3],
-    [4, 5]
+    [2, 1],
+    [5, 3]
 ]
 
 # undefine determinant handling
@@ -140,4 +143,5 @@ D = [
     [4, 6, 5]
 ]
 
+print("\n=== Solving Linear Equations using Gauss-Jordan ERO ===\n")
 showSol(A1)
