@@ -1,3 +1,4 @@
+# File from obeDet.py
 import numpy as np
 
 swap = 0
@@ -8,7 +9,8 @@ def calcDet(A):
 
 def printMatrix(M):
     for row in M:
-        print("   ", row)
+        formatted = ["{:.2f}".format(x) for x in row]
+        print("   [" + ", ".join(formatted) + "]")
     print()
 
 def gaussStep(matrix2):
@@ -18,7 +20,7 @@ def gaussStep(matrix2):
     A = [row[:] for row in matrix2]   # copy matrix
     step = 1
 
-    print("Proses eliminasi OBE:\n")
+    print("Elimination process using ERO:\n")
 
     for i in range(n - 1):
         pivot = A[i][i]
@@ -81,7 +83,12 @@ def showStep2(matrix2):
         print(f"Determinant result: {swapSign * det:.2f}, because we swap {swap} row(s)")
         print()
 
-# test sample
+A1 = [
+    [2, 1, -1, 8],
+    [-3, -1, 2, -11],
+    [-2, 1, 2, -3],
+]
+
 A = [
     [2, 3, 1, 4],
     [1, 0, -1, 2],
@@ -96,8 +103,8 @@ B = [
 ]
 
 C = [
-    [2, 3],
-    [4, 5]
+    [2, 1],
+    [5, 3]
 ]
 
 # undefine determinant handling
@@ -107,5 +114,5 @@ D = [
     [4, 6, 5]
 ]
 
-print("\n=== Determinant with Elementary Row Operation(s) ===\n")
+print("\n=== Determinant with Gauss-Jordan ERO ===\n")
 showStep2(D)
