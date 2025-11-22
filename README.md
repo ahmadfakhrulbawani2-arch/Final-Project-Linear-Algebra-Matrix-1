@@ -42,6 +42,7 @@ All of this program was created using Python3 v3.12.0 and accumulated into a sin
 |-- .gitignore
 
 ```
+*Note: Files in Code/ are actually written in indonesian. Only Jupyter Notebook is written in English.
 
 ## How to run the program?
 What you need is a python launcher. Here I'm using Python3 v3.12.0. You can use any version of Python so don't worry. </br>
