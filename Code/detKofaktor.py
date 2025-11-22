@@ -1,3 +1,4 @@
+# file from detKofaktor.py
 import numpy as np
 
 def calcDet(A):
@@ -7,7 +8,8 @@ def calcDet(A):
 
 def printMatrix(M):
     for row in M:
-        print("   ", row)
+        formatted = ["{:.2f}".format(x) for x in row]
+        print("   [" + ", ".join(formatted) + "]")
     print()
 
 
@@ -41,9 +43,9 @@ def showStep(matrix):
     printMatrix(matrix)
 
     if n == c:
-        print(f"Ekspansi Kofaktor untuk matriks A {n}x{n}:\n")
+        print(f"Cofactor expansion for matrix A {n}x{n}:\n")
 
-        print("Ekspansi sepanjang baris pertama (row 0):\n")
+        print("Expansion of the first row (row 0):\n")
 
         terms = []
         det = 0
@@ -77,8 +79,12 @@ def showStep(matrix):
         print("Please input determinant with order of n x n")
         print()
 
+A1 = [
+    [2, 1, -1, 8],
+    [-3, -1, 2, -11],
+    [-2, 1, 2, -3],
+]
 
-# === test sample ===
 A = [
     [2, 3, 1, 4],
     [1, 0, -1, 2],
@@ -93,8 +99,8 @@ B = [
 ]
 
 C = [
-    [2, 3],
-    [4, 5]
+    [2, 1],
+    [5, 3]
 ]
 
 # undefine determinant handling
@@ -104,6 +110,6 @@ D = [
     [4, 6, 5]
 ]
 
-print("\n=== Determinant with Cofactor Expansion(s) ===\n")
-showStep(D)
+print("\n=== Determinant with Gauss-Jordan ERO ===\n")
+showStep(A)
 # showStep(B)
