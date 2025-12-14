@@ -114,6 +114,12 @@ A1 = [
     [-2, 1, 2, -3],
 ]
 
+A2 = [
+    [3, 1, 2],
+    [1, 4, 2],
+    [2, 1, 5]
+]
+
 A = [
     [2, 3, 1, 4],
     [1, 0, -1, 2],
@@ -241,4 +247,4 @@ E = [
 ]
 
 print("=== Matriks Invers A dengan Gauss-Jordan OBE ===\n")
-showStep(E)
+showStep(A2)

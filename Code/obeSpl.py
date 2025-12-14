@@ -118,6 +118,12 @@ A1 = [
     [-2, 1, 2, -3],
 ]
 
+A2 = [
+    [1, 1, 1, 1],
+    [1, 2, 3, 1],
+    [1, 4, 9, 1],
+]
+
 A = [
     [2, 3, 1, 4],
     [1, 0, -1, 2],
@@ -142,5 +148,11 @@ D = [
     [4, 6, 5]
 ]
 
+inputMatrix = [
+    [1, 1, 1, 1],
+    [1, 2, 3, 1],
+    [1, 4, 9, 1],
+]
+
 print("\n=== Penyelesaian SPL dengan Gauss-Jordan OBE ===\n")
-showSol(A1)
+showSol(inputMatrix)
