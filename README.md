@@ -16,11 +16,14 @@ so first of all what the heck is this project? So this is a program to run some 
 
 Spesifically I'm building a matrix oepration calculator program such as determinant, inverse, and its implementation such as linear equation. </br>
 
-Math theory used is: </br>
+Math theory used is: (read docs for more informations) </br>
 1. 2x2 matrix determinant (I'm using NumPy for this)
 2. Gauss-Jordan elimination and Elementary Row Operation (ERO) for linear equation and determinant of 3x3 or higher matrix. 
 3. Inverse of a matrix using Gauss-Jordan and ERO.
 4. Basic Minor and Cofactor of a matrix. </br>
+5. Basic vector operations
+
+To do list in issues above.
 
 All of this program was created using Python3 v3.12.0 and accumulated into a single Jupyter Notebook file. Also not forget about NumPy as my beloved library
 
@@ -37,12 +40,23 @@ All of this program was created using Python3 v3.12.0 and accumulated into a sin
 |   |
 |   |-- obeInvers.py
 |
+|-- new-code/
+|   |
+|   |-- all new files
+|
+|-- docs/
+|   |
+|   |-- all documentations needed
+|
 |-- all-in-one.ipynb
 |
+|-- all-king-b-indo.py        # new ipynb bahasa indo version
+|
 |-- .gitignore
+|
+|-- .gitattributes
 
 ```
-*Note: Files in Code/ are actually written in indonesian. Only Jupyter Notebook is written in English.
 
 ## How to run the program?
 What you need is a python launcher. Here I'm using Python3 v3.12.0. You can use any version of Python so don't worry. </br>
@@ -80,10 +94,15 @@ for example. The result should be similar to Jupyter Notebook.
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/fkhrl_91)
 
 ##### Author: [Ahmad Fakhrul Bawani](https://github.com/ahmadfakhrulbawani2-arch)  
+---
+
+<p align="center">
+Licensed under MIT License <br>
+Created with ❤️ from authors
+</p>
 
 <p align="right">
   <img src="https://img.shields.io/github/last-commit/ahmadfakhrulbawani2-arch/Final-Project-Linear-Algebra-Matrix-1?style=for-the-badge&color=brightgreen" alt="Last Commit">
 </p>
-
 
 
