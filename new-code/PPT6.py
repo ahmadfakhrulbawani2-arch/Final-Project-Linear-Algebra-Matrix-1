@@ -94,7 +94,7 @@ def dotProduct(vectors):
             V = Vvec
             lengU = len(U)
             lengV = len(V)
-            if lengU != lengV:
+            if lengU != lengV or lengU > 2 or lengV > 2:
                 print(f"Dot product tidak dapat dilakukan karena vector berbeda dimensi (V{i+1}: {lengU}d ; V{j+1}: {lengV}d)\n")
             else:
                 kalkulasi = []

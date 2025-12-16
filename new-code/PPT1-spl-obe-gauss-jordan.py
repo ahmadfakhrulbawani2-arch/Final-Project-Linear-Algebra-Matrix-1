@@ -15,7 +15,7 @@ def tampilkanPersamaan(matrix):
         left = []
         for j in range(variabel):
             coef = matrix[i][j]
-            left.append(f"{coef:.2f}X{j+1}")
+            left.append(f"({coef:.2f})X{j+1}")
 
         lhs = " + ".join(left)
         rhs = matrix[i][col-1]
