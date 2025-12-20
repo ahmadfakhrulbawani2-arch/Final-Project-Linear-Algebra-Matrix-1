@@ -22,6 +22,7 @@ Math theory used is: (read docs for more informations) </br>
 3. Inverse of a matrix using Gauss-Jordan and ERO.
 4. Basic Minor and Cofactor of a matrix. </br>
 5. Basic vector operations
+And more
 
 To do list in issues above.
 
@@ -74,11 +75,11 @@ cd _Your_directory_location
 ```bash
 python -m venv .venv
 
-venv\Scripts\activate
+.venv\Scripts\activate
 ```
 *note: You can use / instead of \ if it doesn't work. Make sure you get this message:
 ```bash
-(venv) C:\Your_directory_location>
+(.venv) C:\Your_directory_location>
 ```
 4. Open the all-in-one.ipynb file or the Jupyter file and try to run all of them. You may or may not get the message to install some packages, if so, do it according the message.
 5. If you have done run the entire files without any error, congratulations you can use the programs now.
